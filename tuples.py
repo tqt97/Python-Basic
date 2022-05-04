@@ -21,6 +21,7 @@ count()	Returns the number of elements with the specified value
 index() Returns the index of the first element with the specified value
 '''
 
+
 #The basics - tuple packing
 t = 12345, 54321, 'hello!'
 t[0]
@@ -63,8 +64,8 @@ y
 z
 
 #built-in function tuple()
-x = tuple(['bobby', 'at', 'didcoding','dot', 'com']) # creates a tuple object
+x = 'bobby', 'at', 'didcoding', 'dot', 'com'
 x
 
 #Tuple comprehension...Just use list comprehension with the tuple function
-tuple([x**2 for x in range(10)])
+tuple(x**2 for x in range(10))

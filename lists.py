@@ -28,6 +28,7 @@ reverse() Reverses the order of the list
 sort() Sorts the list
 '''
 
+
 #The basics
 squares = [1, 4, 9, 16, 25]
 squares
@@ -58,9 +59,7 @@ cubes = [1, 8, 27, 65, 125]  # something's wrong here
 cubes[3] = 64  # replace the wrong value
 cubes
 
-#list methods
-cubes.append(216)  # add the cube of 6
-cubes.append(7 ** 3)  # and the cube of 7
+cubes.extend((216, 7 ** 3))
 cubes
 
 #Length
@@ -87,5 +86,5 @@ y = [x**2 for x in range(10)]
 y
 
 #built-in function list()
-x = list(('bobby', 'at', 'didcoding','dot', 'com')) # creates a list object
+x = ['bobby', 'at', 'didcoding', 'dot', 'com']
 x

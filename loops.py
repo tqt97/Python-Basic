@@ -17,6 +17,7 @@ step
 The value of the step parameter (or 1 if the parameter was not supplied)
 '''
 
+
 #The basics
 words = ['cat', 'window', 'defenestrate']
 for w in words:
@@ -30,16 +31,14 @@ users = {
     }
 
 # Strategy:  Iterate over a copy
-for user, status in users.copy().items():
-    if status == 'inactive':
-        del users[user]
+users = {
+    user: status for user, status in users.items() if status != 'inactive'
+}
 
 # Strategy:  Create a new collection
-active_users = {}
-for user, status in users.items():
-    if status == 'active':
-        active_users[user] = status
-
+active_users = {
+    user: status for user, status in users.items() if status == 'active'
+}
 
 #using the range function
 for i in range(5):
