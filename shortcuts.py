@@ -2,6 +2,7 @@
 10 Python Shortcuts 
 '''
 
+
 # /***    F string    ***/
 from cmath import exp
 
@@ -71,8 +72,8 @@ num = [i * j for i in range(5) for j in range(5)]
 # xx = [0 for _ in range(5)]
 list_test = [[0 for _ in range(5)] for _ in range(5)]
 ##
-text = (i for i in "Hello World")
-text2 = (i for i in "Hello World")
+text = iter("Hello World")
+text2 = iter("Hello World")
 ##
 sentence = "hello world"
 dic_test = {char: sentence.count(char) for char in set(sentence)}
@@ -97,7 +98,7 @@ print(example2 * 2)
 print("\n/*  Inline/Ternary Condition   */")
 c1 = 1 if 2 > 3 else 0
 print(c1)
-c2 = 2 > 1 and 1 or 3
+c2 = 1 if 2 > 1 else 3
 print(c2)
 
 # /***    Zip function     ***/

@@ -14,7 +14,7 @@ Pythons standard library can be found here https://docs.python.org/3/library/
 from functions import demo_func
 
 def func_1(arg:int):
-    x = [y for y in range(2, 10, 2)]
+    x = list(range(2, 10, 2))
     x.append(arg)
     print(x)
 

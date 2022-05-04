@@ -34,8 +34,9 @@ union() Return a set containing the union of sets
 update() Update the set with another set, or any other iterable
 '''
 
+
 #The basics
-basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+basket = {'apple', 'pear', 'orange', 'banana'}
 print(basket)# show that duplicates have been removed
 
 'orange' in basket # fast membership testing
@@ -55,5 +56,5 @@ a ^ b # letters in a or b but not both
 a = {x for x in 'abracadabra' if x not in 'abc'}
 
 #built-in function set()
-x = set(('bobby','bobby', 'at', 'didcoding','dot', 'com')) # creates a set object
+x = {'bobby', 'at', 'didcoding', 'dot', 'com'}
 x

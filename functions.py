@@ -44,8 +44,7 @@ def demo_func(param:int):
     """This is just a demo
     function.
     """
-    calc = param + 4
-    return calc
+    return param + 4
 
 demo_func(6)
 

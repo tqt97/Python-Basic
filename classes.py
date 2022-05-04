@@ -54,8 +54,7 @@ class MyClass:
         self.i = my_int
     
     def f(self):
-        new = self.i ** 3
-        return new
+        return self.i ** 3
 
 x = MyClass(4) #instantiates the class
 x.i # return the int
@@ -66,7 +65,7 @@ x.f() # calls the class method
 
 x.counter = 1 # Add a data attribute and assign a value
 while x.counter < 10:
-    x.counter = x.counter * 2
+    x.counter *= 2
     #first loop x.counter == 2
     #second loop x.counter == 4
     #third loop x.counter == 8
